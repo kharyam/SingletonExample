@@ -11,7 +11,7 @@ public class SimpleSingleton {
     System.out.println("Instance created");
   }
 
-  static SimpleSingleton getInstance() {
+  public static SimpleSingleton getInstance() {
     if (instance == null) {
       createInstance();
     }
@@ -20,6 +20,10 @@ public class SimpleSingleton {
 
   private static void createInstance(){
     instance = new SimpleSingleton();
+  }
+
+  public void doSomething() {
+    System.out.println("Doing some work here");
   }
 
 }
