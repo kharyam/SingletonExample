@@ -11,5 +11,8 @@ public class SimpleSingletonTest {
     SimpleSingleton instance1 = SimpleSingleton.getInstance();
     SimpleSingleton instance2 = SimpleSingleton.getInstance();
     assertTrue("Two calls to get instance returned different instances!", instance1 == instance2);
+
+    // Example usage
+    SimpleSingleton.getInstance().doSomething();
   }
 }
